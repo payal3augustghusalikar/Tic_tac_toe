@@ -9,6 +9,7 @@ public class TicTacToe {
             EmptyBoard();
             printBoard();
             UserInput();
+            userMove();
   }
   static void printBoard() {
 	  System.out.println("Valid cells are==> ");
@@ -27,8 +28,8 @@ public class TicTacToe {
 			
 		}
 	}
-	Scanner scanner = new Scanner(System.in);
-	void UserInput() {
+	static Scanner scanner = new Scanner(System.in);
+	static void UserInput() {
 		String computerSymbol=null;
 	
 		System.out.println("Enter your choice X or O");
@@ -45,7 +46,7 @@ public class TicTacToe {
 		 System.out.println("you entered-> " +playerChoice +", Opponent have -> " +computerSymbol);
 		 printBoard();
 	}
-	void userMove() {
+	static void userMove() {
 		System.out.println("Enter the position to move your choice");
 		String playerMove  = scanner.nextLine();
 
