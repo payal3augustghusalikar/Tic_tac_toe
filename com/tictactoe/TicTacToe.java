@@ -11,6 +11,7 @@ public class TicTacToe {
             UserInput();
   }
   static void printBoard() {
+	  System.out.println("Valid cells are==> ");
 		System.out.println("/---|---|---\\");
 		System.out.println("| " + board[0] + " | " + board[1] + " | " + board[2] + " |");
 		System.out.println("|-----------|");
@@ -35,14 +36,15 @@ public class TicTacToe {
 		if (playerChoice == "X") {
 			computerSymbol="O";
 			playerChoice = "X";
-			System.out.println("you entered " +playerChoice +" Opponent have" +computerSymbol);
+			
 		}
-		else if (playerChoice == "O") {
+		
+		else {
 			 computerSymbol="X";
 			 playerChoice = "O";
-			 System.out.println("you entered " +playerChoice +" Opponent have" +computerSymbol);
+			
 		}
-		//System.out.println("you entered " +playerChoice +" Opponent have" +computerSymbol);
-		// printBoard();
+		 System.out.println("you entered-> " +playerChoice +", Opponent have -> " +computerSymbol);
+		 printBoard();
   }
 }
