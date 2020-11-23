@@ -27,24 +27,28 @@ public class TicTacToe {
 			
 		}
 	}
-	
-	static void UserInput() {
+	Scanner scanner = new Scanner(System.in);
+	void UserInput() {
 		String computerSymbol=null;
-		Scanner scanner = new Scanner(System.in);
+	
 		System.out.println("Enter your choice X or O");
 		String playerChoice = scanner.nextLine();
 		if (playerChoice == "X") {
 			computerSymbol="O";
-			playerChoice = "X";
-			
+			playerChoice = "X";	
 		}
 		
 		else {
 			 computerSymbol="X";
-			 playerChoice = "O";
-			
+			 playerChoice = "O";	
 		}
 		 System.out.println("you entered-> " +playerChoice +", Opponent have -> " +computerSymbol);
 		 printBoard();
-  }
+	}
+	void userMove() {
+		System.out.println("Enter the position to move your choice");
+		String playerMove  = scanner.nextLine();
+
+		
+	}
 }
